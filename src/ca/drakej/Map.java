@@ -5,6 +5,7 @@ import java.awt.*;
 import java.io.BufferedReader;
 import java.io.Reader;
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.Random;
 
 public class Map {
@@ -52,8 +53,34 @@ public class Map {
         return map;
     }
 
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public Point[] getCities() {
+        return cities;
+    }
+
+    public void setCities(Point[] cities) {
+        this.cities = cities;
+    }
+
     private boolean hasCity(Point city) {
-        return Arrays.stream(cities).filter(x -> x != null && x.equals(city)).count() != 0;
+//        return Arrays.stream(cities).filter(x -> x != null && x.equals(city)).count() != 0;
+        return Arrays.stream(cities).filter(Objects::nonNull).anyMatch(x -> x.equals(city));
+
     }
 
     private Point generateCity() {

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.drakej.GenerateDialogController">
+   <center>
+      <GridPane hgap="10.0" vgap="10.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="143.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.0" minWidth="10.0" prefWidth="227.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <children>
+            <Label text="Map Width" />
+            <Label text="Map Height" GridPane.rowIndex="1" />
+            <Label text="Number of Cities" GridPane.rowIndex="2" />
+            <TextField fx:id="width" promptText="20" GridPane.columnIndex="1" />
+            <TextField fx:id="height" promptText="20" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="cities" promptText="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <top>
+      <Pane prefHeight="35.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7b92a8" height="35.0" stroke="#7b92a8" strokeLineJoin="BEVEL" strokeType="OUTSIDE" width="400.0" />
+            <Label layoutX="14.0" layoutY="10.0" text="Generate Cities">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="45.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="generateButton" layoutX="313.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleGenerate" text="Generate" AnchorPane.rightAnchor="20.0" />
+            <Label fx:id="error" layoutX="14.0" layoutY="15.0" prefHeight="16.0" prefWidth="256.0" text="Label" textFill="RED" visible="false" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</fx:root>
