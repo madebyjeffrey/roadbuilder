@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/roadbuilder.iml" filepath="$PROJECT_DIR$/roadbuilder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roadbuilder-master.iml" filepath="$PROJECT_DIR$/roadbuilder-master.iml" />
     </modules>
   </component>
 </project>
