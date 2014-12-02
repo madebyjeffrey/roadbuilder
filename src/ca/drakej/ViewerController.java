@@ -73,21 +73,21 @@ public class ViewerController implements Initializable {
             final double scale = paneMin / ourMin;
 
             Arrays.stream(getMap().getRoads()).forEach(road -> {
-                System.out.println(" updating roads");
+                //System.out.println(" updating roads");
                 Line line = new Line(road.x1 * scale, road.x2 * scale, road.x3 * scale, road.x4 * scale);
                 line.setStroke(Color.BLACK);
                 group.getChildren().addAll(line);
             });
 
             Arrays.stream(getMap().getCities()).forEach(city -> {
-                System.out.println(" " + city.getX() + " " + city.getY());
+                //System.out.println(" " + city.getX() + " " + city.getY());
                 Circle circle = new Circle(city.getX() * scale, city.getY() * scale, 4, Color.RED);
                 group.getChildren().addAll(circle);
             });
 
             pane.getChildren().clear();
             pane.getChildren().add(group);
-            System.out.println(pane.getChildren().toString());
+            //System.out.println(pane.getChildren().toString());
 
 
             System.out.println("Updated");
@@ -129,54 +129,36 @@ public class ViewerController implements Initializable {
         setMap(map);
     }
 
-    int numberOfGAPopulation = 10;      //number of potential solutions in each cycle of GA
+    int numberOfGAPopulation = 10;      //number of potential solutions in each cycle of GA (could be given a dialogue box for easier customizability?)
     public void initializeGAClick(ActionEvent e) throws Exception {
-        map.get().initializeGA(numberOfGAPopulation);
 
-       /* Scene scene = new Scene(parent, 400, 200);
-
-        Stage stage = new Stage();
-        stage.setScene(scene);
-
-
-        stage.show();*/
         Map map = new Map(getMap().getWidth(),getMap().getHeight());
 
         map.setCities(getMap().getCities());
 
-        map.initializeGA(10);
+        map.initializeGA(numberOfGAPopulation);
 
         setMap(map);
 
+        generationNumber = 0;
+
         System.out.println("initialized GA");
-        System.out.println(getMap().toString());
     }
 
     int generationNumber = 0;
 
     public void nextGenerationOfGAClick(ActionEvent e) throws Exception {
-        /*FXMLLoader loader = new FXMLLoader(getClass().getResource("GenerateDialog.fxml"));
-        loader.setRoot(new BorderPane());
-        Parent parent = (Parent)loader.load();
-        GenerateDialogController controller = (GenerateDialogController)loader.getController();
-        Scene scene = new Scene(parent, 400, 200);
 
-        Stage stage = new Stage();
-        stage.setScene(scene);
+        Map map = new Map(getMap().getWidth(),getMap().getHeight());
 
-        controller.getGenerateButton().setOnAction(ae -> {
-            try {
-                generateCities(Integer.parseInt(controller.getWidth().getText()),
-                        Integer.parseInt(controller.getHeight().getText()),
-                        Integer.parseInt(controller.getCities().getText()));
-                stage.close();
-                controller.setError("");
-            } catch (NumberFormatException nfe) {
-                controller.setError("Enter a numeric value to all fields.");
-            }
-        });
+        map.setCities(getMap().getCities());
 
-        stage.show();*/
+        map.setRoadNetworkPopulation(getMap().getRoadNetworkPopulation());
+
+        map.updateGA();
+
+        setMap(map);
+
         generationNumber++;
         System.out.println("now at generation: " + generationNumber);
     }
