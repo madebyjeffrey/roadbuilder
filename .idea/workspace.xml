@@ -29,7 +29,7 @@
       <file leaf-file-name="Generator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ca/drakej/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
+            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
               <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding />
             </state>
@@ -39,28 +39,67 @@
       <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ca/drakej/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.535714" vertical-offset="4845" max-vertical-offset="5270">
-              <caret line="304" column="1" selection-start-line="304" selection-start-column="1" selection-end-line="304" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="688" max-vertical-offset="2070">
+              <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#366#373#0" expanded="true" />
-                <element signature="e#1763#1764#0" expanded="true" />
-                <element signature="e#1791#1792#0" expanded="true" />
-                <element signature="e#1830#1831#0" expanded="true" />
-                <element signature="e#1864#1865#0" expanded="true" />
-                <element signature="e#1894#1895#0" expanded="true" />
-                <element signature="e#1923#1924#0" expanded="true" />
-                <element signature="e#1964#1965#0" expanded="true" />
-                <element signature="e#2000#2001#0" expanded="true" />
-                <element signature="e#3404#3410#0" expanded="true" />
-                <element signature="e#4744#4751#0" expanded="true" />
-                <element signature="e#4816#4823#0" expanded="true" />
-                <element signature="e#4885#4892#0" expanded="true" />
-                <element signature="e#4959#4966#0" expanded="true" />
-                <element signature="e#10413#10434#0" expanded="true" />
-                <element signature="e#10931#10938#0" expanded="true" />
-                <element signature="e#12600#12601#0" expanded="true" />
-                <element signature="e#12644#12645#0" expanded="true" />
+                <element signature="e#340#347#0" expanded="true" />
+                <element signature="e#2865#2886#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Road.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ca/drakej/Road.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+              <caret line="18" column="0" selection-start-line="17" selection-start-column="5" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#365#366#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#477#478#0" expanded="true" />
+                <element signature="e#513#514#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#572#573#0" expanded="true" />
+                <element signature="e#613#614#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#676#677#0" expanded="true" />
+                <element signature="e#702#703#0" expanded="true" />
+                <element signature="e#739#740#0" expanded="true" />
+                <element signature="e#769#770#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeneticAlgorithm.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ca/drakej/GeneticAlgorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.45730826" vertical-offset="209" max-vertical-offset="915">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoadNetworkSolution.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ca/drakej/RoadNetworkSolution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2820">
+              <caret line="73" column="27" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
+                <element signature="e#630#631#0" expanded="true" />
+                <element signature="e#2437#2438#0" expanded="true" />
+                <element signature="e#2523#2524#0" expanded="true" />
+                <element signature="e#2553#2554#0" expanded="true" />
+                <element signature="e#2602#2603#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,7 +108,7 @@
       <file leaf-file-name="Viewer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="510">
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="450">
               <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
               <folding />
             </state>
@@ -79,20 +118,17 @@
       <file leaf-file-name="GenerateDialog.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialog.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1105">
+            <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="975">
               <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="GenerateDialogController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1122">
+            <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="990">
               <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
@@ -102,21 +138,18 @@
       <file leaf-file-name="Viewer.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="405">
               <caret line="12" column="96" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewerController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ViewerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ca/drakej/ViewerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6621622" vertical-offset="1625" max-vertical-offset="2312">
-              <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="2070">
+              <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -134,7 +167,10 @@
         <option value="$PROJECT_DIR$/src/ca/drakej/Viewer.java" />
         <option value="$PROJECT_DIR$/src/ca/drakej/Viewer.fxml" />
         <option value="$PROJECT_DIR$/src/ca/drakej/Map.java" />
+        <option value="$PROJECT_DIR$/src/ca/drakej/Road.java" />
+        <option value="$PROJECT_DIR$/src/ca/drakej/RoadNetworkSolution.java" />
         <option value="$PROJECT_DIR$/src/ca/drakej/ViewerController.java" />
+        <option value="$PROJECT_DIR$/src/ca/drakej/GeneticAlgorithm.java" />
       </list>
     </option>
   </component>
@@ -142,10 +178,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="y" value="23" />
+    <option name="width" value="1809" />
+    <option name="height" value="1010" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -172,45 +207,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="roadbuilder-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="roadbuilder-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="roadbuilder-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="roadbuilder-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="roadbuilder-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drakej" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -239,6 +235,45 @@
             <PATH_ELEMENT USER_OBJECT="ca/drakej">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roadbuilder-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roadbuilder-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roadbuilder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roadbuilder-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roadbuilder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drakej" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -286,47 +321,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -337,24 +331,10 @@
       <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -385,47 +365,33 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -463,6 +429,32 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -479,7 +471,18 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
@@ -499,6 +502,41 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="false" name="Viewer" type="Application" factoryName="Application">
@@ -543,43 +581,45 @@
       <workItem from="1417398732085" duration="11508000" />
       <workItem from="1417414285021" duration="452000" />
       <workItem from="1417486412766" duration="15551000" />
+      <workItem from="1418002072119" duration="6082000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38141000" />
+    <option name="totallyTimeSpent" value="44223000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1809" height="1010" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12225476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837406" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14870094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23591924" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -600,7 +640,9 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -608,6 +650,66 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4560" max-vertical-offset="4650">
+          <caret line="304" column="1" selection-start-line="304" selection-start-column="1" selection-end-line="304" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#340#347#0" expanded="true" />
+            <element signature="e#2865#2886#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="450">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialog.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="975">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="990">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="405">
+          <caret line="12" column="96" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/ViewerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
@@ -622,24 +724,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#366#373#0" expanded="true" />
-            <element signature="e#1763#1764#0" expanded="true" />
-            <element signature="e#1791#1792#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1894#1895#0" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#2000#2001#0" expanded="true" />
-            <element signature="e#3404#3410#0" expanded="true" />
-            <element signature="e#4744#4751#0" expanded="true" />
-            <element signature="e#4816#4823#0" expanded="true" />
-            <element signature="e#4885#4892#0" expanded="true" />
-            <element signature="e#4959#4966#0" expanded="true" />
-            <element signature="e#10413#10434#0" expanded="true" />
-            <element signature="e#10931#10938#0" expanded="true" />
-            <element signature="e#12600#12601#0" expanded="true" />
-            <element signature="e#12644#12645#0" expanded="true" />
+            <element signature="e#340#347#0" expanded="true" />
+            <element signature="e#2865#2886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -653,14 +739,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1105">
           <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialogController.java">
@@ -672,14 +758,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
           <caret line="12" column="96" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/ViewerController.java">
@@ -704,24 +790,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#366#373#0" expanded="true" />
-            <element signature="e#1763#1764#0" expanded="true" />
-            <element signature="e#1791#1792#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1894#1895#0" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#2000#2001#0" expanded="true" />
-            <element signature="e#3404#3410#0" expanded="true" />
-            <element signature="e#4744#4751#0" expanded="true" />
-            <element signature="e#4816#4823#0" expanded="true" />
-            <element signature="e#4885#4892#0" expanded="true" />
-            <element signature="e#4959#4966#0" expanded="true" />
-            <element signature="e#10413#10434#0" expanded="true" />
-            <element signature="e#10931#10938#0" expanded="true" />
-            <element signature="e#12600#12601#0" expanded="true" />
-            <element signature="e#12644#12645#0" expanded="true" />
+            <element signature="e#340#347#0" expanded="true" />
+            <element signature="e#2865#2886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -735,14 +805,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1105">
           <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialogController.java">
@@ -754,14 +824,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
           <caret line="12" column="96" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/ViewerController.java">
@@ -786,24 +856,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#366#373#0" expanded="true" />
-            <element signature="e#1763#1764#0" expanded="true" />
-            <element signature="e#1791#1792#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1894#1895#0" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#2000#2001#0" expanded="true" />
-            <element signature="e#3404#3410#0" expanded="true" />
-            <element signature="e#4744#4751#0" expanded="true" />
-            <element signature="e#4816#4823#0" expanded="true" />
-            <element signature="e#4885#4892#0" expanded="true" />
-            <element signature="e#4959#4966#0" expanded="true" />
-            <element signature="e#10413#10434#0" expanded="true" />
-            <element signature="e#10931#10938#0" expanded="true" />
-            <element signature="e#12600#12601#0" expanded="true" />
-            <element signature="e#12644#12645#0" expanded="true" />
+            <element signature="e#340#347#0" expanded="true" />
+            <element signature="e#2865#2886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -846,24 +900,8 @@
           <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#366#373#0" expanded="true" />
-            <element signature="e#1763#1764#0" expanded="true" />
-            <element signature="e#1791#1792#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1894#1895#0" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#2000#2001#0" expanded="true" />
-            <element signature="e#3404#3410#0" expanded="true" />
-            <element signature="e#4744#4751#0" expanded="true" />
-            <element signature="e#4816#4823#0" expanded="true" />
-            <element signature="e#4885#4892#0" expanded="true" />
-            <element signature="e#4959#4966#0" expanded="true" />
-            <element signature="e#10413#10434#0" expanded="true" />
-            <element signature="e#10931#10938#0" expanded="true" />
-            <element signature="e#12600#12601#0" expanded="true" />
-            <element signature="e#12644#12645#0" expanded="true" />
+            <element signature="e#340#347#0" expanded="true" />
+            <element signature="e#2865#2886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -906,24 +944,8 @@
           <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#366#373#0" expanded="true" />
-            <element signature="e#1763#1764#0" expanded="true" />
-            <element signature="e#1791#1792#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1894#1895#0" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#2000#2001#0" expanded="true" />
-            <element signature="e#3404#3410#0" expanded="true" />
-            <element signature="e#4744#4751#0" expanded="true" />
-            <element signature="e#4816#4823#0" expanded="true" />
-            <element signature="e#4885#4892#0" expanded="true" />
-            <element signature="e#4959#4966#0" expanded="true" />
-            <element signature="e#10413#10434#0" expanded="true" />
-            <element signature="e#10931#10938#0" expanded="true" />
-            <element signature="e#12600#12601#0" expanded="true" />
-            <element signature="e#12644#12645#0" expanded="true" />
+            <element signature="e#340#347#0" expanded="true" />
+            <element signature="e#2865#2886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -966,24 +988,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#366#373#0" expanded="true" />
-            <element signature="e#1763#1764#0" expanded="true" />
-            <element signature="e#1791#1792#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1894#1895#0" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#2000#2001#0" expanded="true" />
-            <element signature="e#3404#3410#0" expanded="true" />
-            <element signature="e#4744#4751#0" expanded="true" />
-            <element signature="e#4816#4823#0" expanded="true" />
-            <element signature="e#4885#4892#0" expanded="true" />
-            <element signature="e#4959#4966#0" expanded="true" />
-            <element signature="e#10413#10434#0" expanded="true" />
-            <element signature="e#10931#10938#0" expanded="true" />
-            <element signature="e#12600#12601#0" expanded="true" />
-            <element signature="e#12644#12645#0" expanded="true" />
+            <element signature="e#340#347#0" expanded="true" />
+            <element signature="e#2865#2886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1013,67 +1019,93 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1105">
           <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
           <caret line="12" column="96" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33246753" vertical-offset="27752" max-vertical-offset="57307">
-          <caret line="1761" column="0" selection-start-line="1761" selection-start-column="0" selection-end-line="1761" selection-end-column="0" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.535714" vertical-offset="4845" max-vertical-offset="5270">
-          <caret line="304" column="1" selection-start-line="304" selection-start-column="1" selection-end-line="304" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="688" max-vertical-offset="2070">
+          <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#366#373#0" expanded="true" />
-            <element signature="e#1763#1764#0" expanded="true" />
-            <element signature="e#1791#1792#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1894#1895#0" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#2000#2001#0" expanded="true" />
-            <element signature="e#3404#3410#0" expanded="true" />
-            <element signature="e#4744#4751#0" expanded="true" />
-            <element signature="e#4816#4823#0" expanded="true" />
-            <element signature="e#4885#4892#0" expanded="true" />
-            <element signature="e#4959#4966#0" expanded="true" />
-            <element signature="e#10413#10434#0" expanded="true" />
-            <element signature="e#10931#10938#0" expanded="true" />
-            <element signature="e#12600#12601#0" expanded="true" />
-            <element signature="e#12644#12645#0" expanded="true" />
+            <element signature="e#340#347#0" expanded="true" />
+            <element signature="e#2865#2886#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/RoadNetworkSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="717" max-vertical-offset="2820">
+          <caret line="73" column="27" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#2437#2438#0" expanded="true" />
+            <element signature="e#2523#2524#0" expanded="true" />
+            <element signature="e#2553#2554#0" expanded="true" />
+            <element signature="e#2602#2603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/Road.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+          <caret line="18" column="0" selection-start-line="17" selection-start-column="5" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/ViewerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6621622" vertical-offset="1625" max-vertical-offset="2312">
-          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="2070">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/GeneticAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45730826" vertical-offset="209" max-vertical-offset="915">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

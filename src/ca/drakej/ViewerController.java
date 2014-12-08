@@ -36,6 +36,7 @@ public class ViewerController implements Initializable {
 
     private
     ObjectProperty<Map> map;
+    private GeneticAlgorithm ga;
 
     public ObjectProperty<Map> mapProperty() {
         return map;
@@ -74,7 +75,8 @@ public class ViewerController implements Initializable {
 
             Arrays.stream(getMap().getRoads()).forEach(road -> {
                 //System.out.println(" updating roads");
-                Line line = new Line(road.x1 * scale, road.x2 * scale, road.x3 * scale, road.x4 * scale);
+                Line line = new Line(road.getStart().getX() * scale, road.getStart().getY() * scale,
+                        road.getEnd().getX() * scale, road.getEnd().getY() * scale);
                 line.setStroke(Color.BLACK);
                 group.getChildren().addAll(line);
             });
@@ -136,7 +138,7 @@ public class ViewerController implements Initializable {
 
         map.setCities(getMap().getCities());
 
-        map.initializeGA(numberOfGAPopulation);
+        ga = new GeneticAlgorithm(map, numberOfGAPopulation);
 
         setMap(map);
 
