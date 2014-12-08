@@ -39,14 +39,31 @@
       <file leaf-file-name="Map.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ca/drakej/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.700361" vertical-offset="6249" max-vertical-offset="7378">
-              <caret line="387" column="52" selection-start-line="387" selection-start-column="52" selection-end-line="387" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.8831615" vertical-offset="4299" max-vertical-offset="9554">
+              <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#13425#13426#0" expanded="true" />
-                <element signature="e#13469#13470#0" expanded="true" />
-                <element signature="e#13796#13817#0" expanded="true" />
-                <element signature="e#14126#14147#0" expanded="true" />
+                <element signature="e#366#373#0" expanded="true" />
+                <element signature="e#1766#1767#0" expanded="true" />
+                <element signature="e#1794#1795#0" expanded="true" />
+                <element signature="e#1833#1834#0" expanded="true" />
+                <element signature="e#1867#1868#0" expanded="true" />
+                <element signature="e#1897#1898#0" expanded="true" />
+                <element signature="e#1926#1927#0" expanded="true" />
+                <element signature="e#1967#1968#0" expanded="true" />
+                <element signature="e#2003#2004#0" expanded="true" />
+                <element signature="e#3699#3705#0" expanded="true" />
+                <element signature="e#4218#4227#0" expanded="true" />
+                <element signature="e#11829#11836#0" expanded="true" />
+                <element signature="e#11901#11908#0" expanded="true" />
+                <element signature="e#11970#11977#0" expanded="true" />
+                <element signature="e#12044#12051#0" expanded="true" />
+                <element signature="e#17522#17543#0" expanded="true" />
+                <element signature="e#18040#18047#0" expanded="true" />
+                <element signature="e#19915#19916#0" expanded="true" />
+                <element signature="e#19959#19960#0" expanded="true" />
+                <element signature="e#20286#20307#0" expanded="true" />
+                <element signature="e#20681#20702#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,14 +81,14 @@
       </file>
       <file leaf-file-name="GenerateDialog.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialog.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1105">
               <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
           </provider>
         </entry>
       </file>
@@ -87,22 +104,22 @@
       </file>
       <file leaf-file-name="Viewer.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
               <caret line="12" column="96" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
         </entry>
       </file>
       <file leaf-file-name="ViewerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ca/drakej/ViewerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1846" max-vertical-offset="2312">
-              <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+            <state vertical-scroll-proportion="7.392857" vertical-offset="887" max-vertical-offset="2465">
+              <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -196,7 +213,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -229,6 +245,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,7 +268,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/controlsfx-8.20.8.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../roadbuilder-unclean/roadbuilder-unclean" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Application.Viewer">
@@ -530,11 +547,12 @@
       <workItem from="1417414285021" duration="452000" />
       <workItem from="1417486412766" duration="15551000" />
       <workItem from="1418007789743" duration="4420000" />
+      <workItem from="1418023539299" duration="12107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42561000" />
+    <option name="totallyTimeSpent" value="54668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -551,7 +569,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47559056" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43307087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12225476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -595,6 +613,52 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="510">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1105">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1122">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
+          <caret line="12" column="96" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/ViewerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1846" max-vertical-offset="2312">
+          <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
@@ -609,10 +673,27 @@
           <caret line="304" column="1" selection-start-line="304" selection-start-column="1" selection-end-line="304" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#13425#13426#0" expanded="true" />
-            <element signature="e#13469#13470#0" expanded="true" />
-            <element signature="e#13796#13817#0" expanded="true" />
-            <element signature="e#14126#14147#0" expanded="true" />
+            <element signature="e#366#373#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#3699#3705#0" expanded="true" />
+            <element signature="e#4218#4227#0" expanded="true" />
+            <element signature="e#11829#11836#0" expanded="true" />
+            <element signature="e#11901#11908#0" expanded="true" />
+            <element signature="e#11970#11977#0" expanded="true" />
+            <element signature="e#12044#12051#0" expanded="true" />
+            <element signature="e#17522#17543#0" expanded="true" />
+            <element signature="e#18040#18047#0" expanded="true" />
+            <element signature="e#19915#19916#0" expanded="true" />
+            <element signature="e#19959#19960#0" expanded="true" />
+            <element signature="e#20286#20307#0" expanded="true" />
+            <element signature="e#20681#20702#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -626,14 +707,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1105">
           <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialogController.java">
@@ -645,14 +726,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
           <caret line="12" column="96" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/ViewerController.java">
@@ -677,10 +758,27 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#13425#13426#0" expanded="true" />
-            <element signature="e#13469#13470#0" expanded="true" />
-            <element signature="e#13796#13817#0" expanded="true" />
-            <element signature="e#14126#14147#0" expanded="true" />
+            <element signature="e#366#373#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#3699#3705#0" expanded="true" />
+            <element signature="e#4218#4227#0" expanded="true" />
+            <element signature="e#11829#11836#0" expanded="true" />
+            <element signature="e#11901#11908#0" expanded="true" />
+            <element signature="e#11970#11977#0" expanded="true" />
+            <element signature="e#12044#12051#0" expanded="true" />
+            <element signature="e#17522#17543#0" expanded="true" />
+            <element signature="e#18040#18047#0" expanded="true" />
+            <element signature="e#19915#19916#0" expanded="true" />
+            <element signature="e#19959#19960#0" expanded="true" />
+            <element signature="e#20286#20307#0" expanded="true" />
+            <element signature="e#20681#20702#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -694,14 +792,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1105">
           <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialogController.java">
@@ -713,14 +811,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
           <caret line="12" column="96" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/ViewerController.java">
@@ -745,10 +843,27 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#13425#13426#0" expanded="true" />
-            <element signature="e#13469#13470#0" expanded="true" />
-            <element signature="e#13796#13817#0" expanded="true" />
-            <element signature="e#14126#14147#0" expanded="true" />
+            <element signature="e#366#373#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#3699#3705#0" expanded="true" />
+            <element signature="e#4218#4227#0" expanded="true" />
+            <element signature="e#11829#11836#0" expanded="true" />
+            <element signature="e#11901#11908#0" expanded="true" />
+            <element signature="e#11970#11977#0" expanded="true" />
+            <element signature="e#12044#12051#0" expanded="true" />
+            <element signature="e#17522#17543#0" expanded="true" />
+            <element signature="e#18040#18047#0" expanded="true" />
+            <element signature="e#19915#19916#0" expanded="true" />
+            <element signature="e#19959#19960#0" expanded="true" />
+            <element signature="e#20286#20307#0" expanded="true" />
+            <element signature="e#20681#20702#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -762,14 +877,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1105">
           <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialogController.java">
@@ -781,14 +896,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
           <caret line="12" column="96" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/ViewerController.java">
@@ -813,10 +928,27 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#13425#13426#0" expanded="true" />
-            <element signature="e#13469#13470#0" expanded="true" />
-            <element signature="e#13796#13817#0" expanded="true" />
-            <element signature="e#14126#14147#0" expanded="true" />
+            <element signature="e#366#373#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#3699#3705#0" expanded="true" />
+            <element signature="e#4218#4227#0" expanded="true" />
+            <element signature="e#11829#11836#0" expanded="true" />
+            <element signature="e#11901#11908#0" expanded="true" />
+            <element signature="e#11970#11977#0" expanded="true" />
+            <element signature="e#12044#12051#0" expanded="true" />
+            <element signature="e#17522#17543#0" expanded="true" />
+            <element signature="e#18040#18047#0" expanded="true" />
+            <element signature="e#19915#19916#0" expanded="true" />
+            <element signature="e#19959#19960#0" expanded="true" />
+            <element signature="e#20286#20307#0" expanded="true" />
+            <element signature="e#20681#20702#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -859,10 +991,27 @@
           <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#13425#13426#0" expanded="true" />
-            <element signature="e#13469#13470#0" expanded="true" />
-            <element signature="e#13796#13817#0" expanded="true" />
-            <element signature="e#14126#14147#0" expanded="true" />
+            <element signature="e#366#373#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#3699#3705#0" expanded="true" />
+            <element signature="e#4218#4227#0" expanded="true" />
+            <element signature="e#11829#11836#0" expanded="true" />
+            <element signature="e#11901#11908#0" expanded="true" />
+            <element signature="e#11970#11977#0" expanded="true" />
+            <element signature="e#12044#12051#0" expanded="true" />
+            <element signature="e#17522#17543#0" expanded="true" />
+            <element signature="e#18040#18047#0" expanded="true" />
+            <element signature="e#19915#19916#0" expanded="true" />
+            <element signature="e#19959#19960#0" expanded="true" />
+            <element signature="e#20286#20307#0" expanded="true" />
+            <element signature="e#20681#20702#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -905,10 +1054,27 @@
           <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#13425#13426#0" expanded="true" />
-            <element signature="e#13469#13470#0" expanded="true" />
-            <element signature="e#13796#13817#0" expanded="true" />
-            <element signature="e#14126#14147#0" expanded="true" />
+            <element signature="e#366#373#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#3699#3705#0" expanded="true" />
+            <element signature="e#4218#4227#0" expanded="true" />
+            <element signature="e#11829#11836#0" expanded="true" />
+            <element signature="e#11901#11908#0" expanded="true" />
+            <element signature="e#11970#11977#0" expanded="true" />
+            <element signature="e#12044#12051#0" expanded="true" />
+            <element signature="e#17522#17543#0" expanded="true" />
+            <element signature="e#18040#18047#0" expanded="true" />
+            <element signature="e#19915#19916#0" expanded="true" />
+            <element signature="e#19959#19960#0" expanded="true" />
+            <element signature="e#20286#20307#0" expanded="true" />
+            <element signature="e#20681#20702#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -951,10 +1117,27 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#13425#13426#0" expanded="true" />
-            <element signature="e#13469#13470#0" expanded="true" />
-            <element signature="e#13796#13817#0" expanded="true" />
-            <element signature="e#14126#14147#0" expanded="true" />
+            <element signature="e#366#373#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#3699#3705#0" expanded="true" />
+            <element signature="e#4218#4227#0" expanded="true" />
+            <element signature="e#11829#11836#0" expanded="true" />
+            <element signature="e#11901#11908#0" expanded="true" />
+            <element signature="e#11970#11977#0" expanded="true" />
+            <element signature="e#12044#12051#0" expanded="true" />
+            <element signature="e#17522#17543#0" expanded="true" />
+            <element signature="e#18040#18047#0" expanded="true" />
+            <element signature="e#19915#19916#0" expanded="true" />
+            <element signature="e#19959#19960#0" expanded="true" />
+            <element signature="e#20286#20307#0" expanded="true" />
+            <element signature="e#20681#20702#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -984,25 +1167,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/GenerateDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1105">
           <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ca/drakej/Viewer.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
           <caret line="12" column="96" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
@@ -1014,22 +1197,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/ViewerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1846" max-vertical-offset="2312">
-          <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        <state vertical-scroll-proportion="7.392857" vertical-offset="887" max-vertical-offset="2465">
+          <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/drakej/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.700361" vertical-offset="6249" max-vertical-offset="7378">
-          <caret line="387" column="52" selection-start-line="387" selection-start-column="52" selection-end-line="387" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.8831615" vertical-offset="4299" max-vertical-offset="9554">
+          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#13425#13426#0" expanded="true" />
-            <element signature="e#13469#13470#0" expanded="true" />
-            <element signature="e#13796#13817#0" expanded="true" />
-            <element signature="e#14126#14147#0" expanded="true" />
+            <element signature="e#366#373#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#3699#3705#0" expanded="true" />
+            <element signature="e#4218#4227#0" expanded="true" />
+            <element signature="e#11829#11836#0" expanded="true" />
+            <element signature="e#11901#11908#0" expanded="true" />
+            <element signature="e#11970#11977#0" expanded="true" />
+            <element signature="e#12044#12051#0" expanded="true" />
+            <element signature="e#17522#17543#0" expanded="true" />
+            <element signature="e#18040#18047#0" expanded="true" />
+            <element signature="e#19915#19916#0" expanded="true" />
+            <element signature="e#19959#19960#0" expanded="true" />
+            <element signature="e#20286#20307#0" expanded="true" />
+            <element signature="e#20681#20702#0" expanded="true" />
           </folding>
         </state>
       </provider>

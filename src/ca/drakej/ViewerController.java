@@ -72,6 +72,15 @@ public class ViewerController implements Initializable {
             final double ourMin = Math.min(newValue.getWidth(), newValue.getHeight());
             final double scale = paneMin / ourMin;
 
+            for (int i = 1; i < getMap().getWidth(); i++)
+            {
+                for (int j = 1; j < getMap().getHeight(); j++)
+                {
+                    Circle circle = new Circle(i * scale, j * scale, 1, Color.BLACK);
+                    group.getChildren().addAll(circle);
+                }
+            }
+
             Arrays.stream(getMap().getRoads()).forEach(road -> {
                 //System.out.println(" updating roads");
                 Line line = new Line(road.x1 * scale, road.x2 * scale, road.x3 * scale, road.x4 * scale);
