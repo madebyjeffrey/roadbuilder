@@ -113,12 +113,33 @@ public class Map {
 
 
     //class RoadNetworkSolution: a class that stores a list of roads, plus score calculation for comparison (an "agent" or "gene sequence" in population)
-    public class RoadNetworkSolution {
+    public class RoadNetworkSolution implements Comparable<RoadNetworkSolution> {
         public List<Road> roadNetwork = new ArrayList<Road>();
 
         public float score01 = 0f;
         public float score02 = 0f;
         public float score = 0f;
+
+        public int removeDuplicates() {
+            int sizeOfList = roadNetwork.size();
+            HashSet hs = new HashSet();
+            hs.addAll(roadNetwork);
+            roadNetwork.clear();
+            roadNetwork.addAll(hs);
+            return sizeOfList - roadNetwork.size();
+        }
+
+
+
+        public int compareTo(RoadNetworkSolution r2)
+        {
+            if (this.score < r2.score)
+                return -1;
+            else if (this.score > r2.score)
+                return 1;
+            else
+                return 0;
+        }
 
         public void calculateScore(List<Point> locations) {
             //calculate score based on locations (cities) provided:
@@ -211,7 +232,7 @@ public class Map {
                         if (traveledPoints.indexOf(locations.get(j)) == -1)
                         {
                             //case where graph is not complete
-                            totalAvgDistance += width*height;
+                            totalAvgDistance += Math.pow((double) width * height, 2);
                         }
                         else {
                             totalAvgDistance += traveledFloatPoints.get(traveledPoints.indexOf(locations.get(j)));
@@ -256,10 +277,16 @@ public class Map {
             }
 
             newNetwork.calculateScore(cities);
-            System.out.println("Road Network " + j + ": " + newNetwork.score01 + " + " + newNetwork.score02 + " = " + newNetwork.score);
 
             roadNetworkPopulation.add(newNetwork);
         }
+        Collections.sort(roadNetworkPopulation);
+        for (int j = 0; j < numOfPopulation; j++) {
+            System.out.println("Road Network " + j + ": " + roadNetworkPopulation.get(j).score01
+                    + " + " + roadNetworkPopulation.get(j).score02 + " = "
+                    + roadNetworkPopulation.get(j).score);
+        }
+
     }
 
     //function getRoads: returns the best current road network (to display in ViewerController.java)
@@ -292,7 +319,112 @@ public class Map {
 
     public void updateGA()
     {
-        //TODO: EVERYTHING!
+
+        Collections.sort(roadNetworkPopulation);
+
+        ArrayList<RoadNetworkSolution> newGeneration
+                = new ArrayList<RoadNetworkSolution>();
+
+        for (int j = 0; j < 5; j++)
+        {
+            newGeneration.add(roadNetworkPopulation.get(j));
+        }
+        Random rand = new Random();
+        for (int j = 5; j < roadNetworkPopulation.size(); j++) {
+            ArrayList<RoadNetworkSolution> parents
+                    = new ArrayList<RoadNetworkSolution>();
+            int r1, r2, r3;
+            r1 = rand.nextInt(roadNetworkPopulation.size());
+            r2 = rand.nextInt(roadNetworkPopulation.size());
+            r3 = rand.nextInt(roadNetworkPopulation.size());
+
+            parents.add(roadNetworkPopulation.get(r1));
+            parents.add(roadNetworkPopulation.get(r2));
+            parents.add(roadNetworkPopulation.get(r3));
+            Collections.sort(parents);
+
+            //now only use parents at 0 and 1 to make child
+            double totalProb = (parents.get(0).score + parents.get(1).score);
+            double prob01 = totalProb - parents.get(0).score;
+            double prob02 = totalProb - parents.get(1).score;
+            RoadNetworkSolution newNetwork = new RoadNetworkSolution();
+            for (int k = 0; k < Math.max(parents.get(0).roadNetwork.size(), parents.get(1).roadNetwork.size()); k++)
+            {
+                //random number between 0 and 1, scaled to fit our probability
+                double decidingNumber = rand.nextFloat()*totalProb;
+                if (decidingNumber < prob01)
+                {
+                    //add a random road from solution 01
+                    newNetwork.roadNetwork.add(parents.get(0).roadNetwork.get(rand.nextInt(parents.get(0).roadNetwork.size())));
+                }
+                else
+                {
+                    //add a random road from solution 02
+                    newNetwork.roadNetwork.add(parents.get(1).roadNetwork.get(rand.nextInt(parents.get(1).roadNetwork.size())));
+                }
+            }
+
+            int dup = newNetwork.removeDuplicates();
+            //remove duplicate roads, but replace them with a new road
+            while (dup != 0)
+            {
+                for (int i = 0; i < dup; i++)
+                {
+                    Point city1, city2;
+                    int city1Index = rand.nextInt(cities.size());
+                    int city2Index = rand.nextInt(cities.size());
+                    if (city1Index == city2Index)
+                    {
+                        city2Index++;
+                        if (city2Index >= cities.size())
+                            city2Index = 0;
+                    }
+                    city1 = cities.get(city1Index);
+                    city2 = cities.get(city2Index);
+
+                    Road newRoad = new Road(city1.x, city1.y, city2.x, city2.y);
+                    newNetwork.roadNetwork.add(newRoad);
+                }
+                dup = newNetwork.removeDuplicates();
+            }
+
+            newNetwork.calculateScore(cities);
+            newGeneration.add(newNetwork);
+        }
+        roadNetworkPopulation.clear();
+        for (int i = 0; i < newGeneration.size(); i++)
+        {
+            roadNetworkPopulation.add(newGeneration.get(i));
+        }
+        /*for (int j = 0; j < numOfPopulation; j++) {
+
+            RoadNetworkSolution newNetwork = new RoadNetworkSolution();
+
+            //generate roads randomly (straight lines per city, do not connect to city already with connection)
+            Random rand = new Random();
+            List<Point> newCityList = new ArrayList<Point>();
+            for (int i = 0; i < cities.size(); i++) {
+                newCityList.add(cities.get(i));
+            }
+            Point currentCity = cities.get(rand.nextInt(cities.size()));
+            newCityList.remove(currentCity);
+
+            while (newCityList.size() > 0) {
+                Point newCity = newCityList.get(rand.nextInt(newCityList.size()));
+                Road newRoad = new Road(currentCity.x, currentCity.y, newCity.x, newCity.y);
+                newNetwork.roadNetwork.add(newRoad);
+                currentCity = newCity;
+                newCityList.remove(newCity);
+            }
+
+            newNetwork.calculateScore(cities);
+            System.out.println("Road Network " + j + ": " + newNetwork.score01 + " + " + newNetwork.score02 + " = " + newNetwork.score);
+
+            roadNetworkPopulation.add(newNetwork);
+        }*/
+
+        Collections.sort(roadNetworkPopulation);
+
         for (int j = 0; j < roadNetworkPopulation.size(); j++) {
 
             System.out.println("Road Network " + j + ": "
