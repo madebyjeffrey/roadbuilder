@@ -13,7 +13,7 @@ import java.util.*; //added by AH
 public class Map {
     private int width;
     private int height;
-    private List<Point> cities = new ArrayList<Point>();    //modified by AH    //private Point[] cities;
+    private List<Point> cities = new ArrayList<>();    //modified by AH    //private Point[] cities;
 
     public Map(int width, int height) {
         this.width = width;
@@ -68,22 +68,17 @@ public class Map {
         this.height = height;
     }
 
-    public Point[] getCities() {
-        Point[] returnMe = new Point[cities.size()];
-        cities.toArray(returnMe);
-        return returnMe;
+    public List<Point> getCities() {
+        return cities;
     }
 
-    public void setCities(Point[] cities) {
-
-        this.cities.clear();
-        for (int i = 0; i < cities.length; i++) {
-            this.cities.add(cities[i]);
-        }
+    public void setCities(List<Point> cities) {
+        this.cities = cities;
     }
 
     public boolean hasCity(Point city) {
-        return Arrays.stream(cities.toArray()).filter(Objects::nonNull).anyMatch(x -> x.equals(city));
+        return cities.contains(city);
+        //return cities.stream().filter(Objects::nonNull).anyMatch(x -> x.equals(city));
     }
 
     private Point generateCity() {

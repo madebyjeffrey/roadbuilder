@@ -17,9 +17,22 @@ public class GeneticAlgorithm {
         this.map = map;
         this.pop = population;
 
+
+
         this.population = new ArrayList<>();
+        if (this.map.getCities().size() == 0) return;
 
         init(pop);
+    }
+
+    // assumes the last one is the best
+    public RoadNetworkSolution getBest() {
+
+        if (this.population.size() == 0) return null;
+
+        RoadNetworkSolution[] rns = population.stream().sorted((x, y) -> Double.compare(x.score(), y.score())).toArray(RoadNetworkSolution[]::new);
+
+        return rns[rns.length-1];
     }
 
     //initializeGA: function that initializes population (number of random roadSequences) based on given size)
@@ -31,10 +44,10 @@ public class GeneticAlgorithm {
 
             //generate roads randomly (straight lines per city, do not connect to city already with connection)
             Random rand = new Random();
-            List<Point> newCityList = Arrays.stream(map.getCities()).collect(Collectors.toList());
+            List<Point> newCityList = new ArrayList<>(map.getCities());
 
 
-            Point currentCity = map.getCities()[rand.nextInt(map.getCities().length)];
+            Point currentCity = map.getCities().get(rand.nextInt(map.getCities().size()));
             newCityList.remove(currentCity);
 
             while (newCityList.size() > 0) {
@@ -47,6 +60,8 @@ public class GeneticAlgorithm {
 
             newNetwork.score();
             System.out.println("Road Network " + j + ": " + newNetwork.complete() + " + " + newNetwork.totalLength() + " = " + newNetwork.score());
+
+            newNetwork.averageLength();
 
             population.add(newNetwork);
         }

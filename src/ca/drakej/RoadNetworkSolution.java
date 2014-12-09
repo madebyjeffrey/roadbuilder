@@ -14,6 +14,22 @@ public class RoadNetworkSolution {
     private Map map;
     public List<Road> roadNetwork = new ArrayList<>();
 
+    public List<Road> getRoadNetwork() {
+        return roadNetwork;
+    }
+
+    public Map getMap() {
+        return map;
+    }
+
+    public void setMap(Map map) {
+        this.map = map;
+    }
+
+    public void setRoadNetwork(List<Road> roadNetwork) {
+        this.roadNetwork = roadNetwork;
+    }
+
     public float score01 = 0f;
     public float score02 = 0f;
     public float score = 0f;
@@ -34,7 +50,7 @@ public class RoadNetworkSolution {
     // unvisited point, not overall
     public double complete() {
         // unvisited only contains cities
-        List<Point> unvisited = Arrays.stream(map.getCities()).collect(Collectors.toCollection(ArrayList<Point>::new));
+        List<Point> unvisited = new ArrayList<>(map.getCities());
         // visited will contain points
         List<Point> visited = new ArrayList<>();
 
@@ -61,7 +77,7 @@ public class RoadNetworkSolution {
             });
         }
 
-        return unvisited.size() / visited.size();
+        return unvisited.size() / visited.size() * 1000;
     }
 
     // does not duplicate road sections that would be used on multiple paths
@@ -69,11 +85,118 @@ public class RoadNetworkSolution {
         return roadNetwork.stream().map(Road::length).reduce((x,y)->x+y).get();
     }
 
+    public double averageLength() {
+        Dijkstra lengths = new Dijkstra();
 
-    public double score() {
-        return complete() * totalLength();
+        lengths.resolvePaths(0);
+
+        for (int i = 0; i < map.getCities().size(); ++i) {
+            System.out.printf("Distance from 0 to %d is %f\n", i, lengths.distanceTo(i));
+        }
+
+        return 0;
+
     }
 
+
+    public double score() {
+        return complete() + totalLength();
+    }
+
+
+    public double shortestDistance(Point a, Point b) {
+        return 0;
+    }
+
+    class Dijkstra implements Comparator<Integer> {
+        private Point[] V;  // all points, starting with city indexes
+        private int[][] E;  // adjacency list - first index as in V is an ordered list of connections to that point
+        private double[][] D; // list of distances between the points in E. (i.e. cost function)
+
+        private double[] d; // upper bound on the weight of the shortest path from start to v
+        private double[] p; // the predecessor field - can be used to recreate the path
+
+        public Dijkstra() {
+            // obtain all points for roads
+            List<Point> starts = getRoadNetwork().stream().map(Road::getStart).collect(Collectors.toList());
+            List<Point> ends = getRoadNetwork().stream().map(Road::getEnd).collect(Collectors.toList());
+            starts.addAll(ends);
+
+            // Points are in the order of the cities, followed by the intersections
+            List<Point> allPoints = new ArrayList<>(getMap().getCities());
+            allPoints.addAll(starts.stream().distinct().filter(p -> !getMap().getCities().contains(p)).collect(Collectors.toList()));
+
+            V = allPoints.toArray(new Point[allPoints.size()]);
+
+            // create adjacency list and distance list
+            E = new int[V.length][];
+            D = new double[V.length][];
+
+            for (int i = 0; i < V.length; ++i) {
+                final int pp = i;
+                List<Point> connections = getRoadNetwork().stream()
+                        .filter(road -> road.getStart().equals(V[pp]) || road.getEnd().equals(V[pp]))
+                        .map(road -> road.getStart().equals(V[pp]) ? road.getEnd() : road.getStart())
+                        .distinct()
+                        .collect(Collectors.toList());
+
+                E[i] = connections.stream().map(p -> allPoints.indexOf(p)).mapToInt(Integer::intValue).toArray();
+                D[i] = connections.stream().map(V[pp]::distance).mapToDouble(Double::doubleValue).toArray();
+            }
+        }
+
+        public int compare(Integer o1, Integer o2) {
+            return Double.compare(d[o1], d[o2]);
+        }
+
+        public boolean equals(Object o) {
+            return o instanceof Dijkstra;
+        }
+
+
+        public void resolvePaths(int start) {
+            // 'initialize-single-source'
+            d = new double[V.length];
+            p = new double[V.length];
+            for (int i = 0; i < d.length; ++i) {
+                d[i] = Double.POSITIVE_INFINITY;
+                p[i] = Double.NaN;
+            }
+
+            d[start] = 0;
+
+            Stack<Integer> S = new Stack<>();       // these are whose shortest paths have been determined
+            PriorityQueue<Integer> Q = new PriorityQueue<>(V.length, this);  // contains all vertices, V - S, this is its own comparator
+
+            for (int i = 0; i < V.length; ++i)
+                Q.add(i);
+
+            while (!Q.isEmpty()) {
+                Integer u = Q.poll(); // extract min
+                S.add(u);
+
+                for (int i = 0; i < E[u].length; ++i) {
+                    relax(u, E[u][i], i);
+                }
+            }
+        }
+
+        // i is the index in i and D because it is an adjacency list
+        private void relax(int u, int v, int i) {
+            if (d[v] > (d[u] + D[u][i])) {
+                d[v] = d[u] + D[u][i];
+                p[v] = u;
+            }
+        }
+
+        public double distanceTo(int dest) {
+            return d[dest];
+        }
+
+    }
+
+
+    //locations == list of cities
 //    public void calculateScore(List<Point> locations) {
 //        //calculate score based on locations (cities) provided:
 //        //score = (total distance of roads) + (average distance from any location a to any location b)
@@ -81,14 +204,10 @@ public class RoadNetworkSolution {
 //        //lower score is better
 //        //question: should we normalize each criteria afterwards, so we can compare them and apply weights later?
 //
-//        float totalDistance = 0f;
-//        float avgDistance = 0f;
+//        double totalDistance = 0f;
+//        double avgDistance = 0f;
 //
-//        //---parameter/criteria 1: total distance of all roads---
-//        for (int i = 0; i < roadNetwork.size(); i++) {
-//            Point p = new Point(roadNetwork.get(i).x1, roadNetwork.get(i).x2);
-//            totalDistance += p.distance(roadNetwork.get(i).x3, roadNetwork.get(i).x4);
-//        }
+//        totalDistance = totalLength();
 //
 //        //---parameter/criteria 2: average distance between any two points---
 //        float totalAvgDistance = 0;
