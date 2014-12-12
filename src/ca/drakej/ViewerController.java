@@ -81,12 +81,20 @@ public class ViewerController implements Initializable {
                 }
             }
 
+
+
             Arrays.stream(getMap().getRoads()).forEach(road -> {
                 //System.out.println(" updating roads");
                 Line line = new Line(road.x1 * scale, road.x2 * scale, road.x3 * scale, road.x4 * scale);
                 line.setStroke(Color.BLACK);
                 group.getChildren().addAll(line);
             });
+
+            /*Arrays.stream(getMap().getIntersections()).forEach(inter -> {
+                //System.out.println(" updating roads");
+                Circle circle = new Circle((float)inter.getKey() * scale, (float)inter.getValue() * scale, 8, Color.PURPLE);
+                group.getChildren().addAll(circle);
+            });*/
 
             Arrays.stream(getMap().getCities()).forEach(city -> {
                 //System.out.println(" " + city.getX() + " " + city.getY());
@@ -99,7 +107,7 @@ public class ViewerController implements Initializable {
             //System.out.println(pane.getChildren().toString());
 
 
-            System.out.println("Updated");
+            //System.out.println("Updated");
         });
     }
 

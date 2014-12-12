@@ -191,58 +191,66 @@ public class Map {
                 roadNetwork.remove(indexToRemove.get(i));
         }
 
-
+        //public Set<Point> myIntersections = new HashSet<Point>();
+        public Set<Pair<Float,Float>> myIntersections = new HashSet<Pair<Float,Float>>();
         public void updateIntersections()
         {
             System.out.println("updating intersections");
             int totalInt = 0;
             Road r1 = null, r2 = null;
-            int interX = -1, interY = -1;
+            float interX = -1, interY = -1;
 
-            //do {
+            myIntersections.clear();
+            do {
                 interX = -1;
                 interY = -1;
                 r1 = null;
                 r2 = null;
                 for (int i = 0; i < roadNetwork.size(); i++) {
-                    int x1 = roadNetwork.get(i).x1;
-                    int y1 = roadNetwork.get(i).x2;
-                    int x2 = roadNetwork.get(i).x3;
-                    int y2 = roadNetwork.get(i).x4;
+                    float x1 = roadNetwork.get(i).x1;
+                    float y1 = roadNetwork.get(i).x2;
+                    float x2 = roadNetwork.get(i).x3;
+                    float y2 = roadNetwork.get(i).x4;
                     for (int j = 0; j < roadNetwork.size(); j++) {
                         if (i != j) {
                             //does this road intersect with current road?
-                            int x3 = roadNetwork.get(j).x1;
-                            int y3 = roadNetwork.get(j).x2;
-                            int x4 = roadNetwork.get(j).x3;
-                            int y4 = roadNetwork.get(j).x4;
+                            float x3 = roadNetwork.get(j).x1;
+                            float y3 = roadNetwork.get(j).x2;
+                            float x4 = roadNetwork.get(j).x3;
+                            float y4 = roadNetwork.get(j).x4;
                             if ((x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4) == 0)
                                 continue;
                             //float intersectx = (((((x1 * y2) - (y1 * x2)) * (x3 - x4))
                              //       - ((x1 - x2) * ((x3 * y4) - (y3 * x4))) /
                               //      (((x1 - x2) * (y3 - y4)) - ((y1 - y2) * (x3 - x4)))));
-                            int intersectx = (((x1*y2 - y1*x2)*(x3-x4))-((x1-x2)*(x3*y4-y3*x4)))
+                            float intersectx = (((x1*y2 - y1*x2)*(x3-x4))-((x1-x2)*(x3*y4-y3*x4)))
                                     / (((x1-x2)*(y3-y4))-((y1-y2)*(x3-x4)));
-                            int intersecty = (((((x1 * y2) - (y1 * x2)) * (y3 - y4)) -
+                            float intersecty = (((((x1 * y2) - (y1 * x2)) * (y3 - y4)) -
                                     ((y1 - y2) * ((x3 * y4) - (y3 * x4)))) /
                                     (((x1 - x2) * (y3 - y4)) - ((y1 - y2) * (x3 - x4))));
                             //System.out.println("from " + x1 + "," + y1 + " and " + x2 + ","+ y2 +
                             //        " to " + x3 + "," + y3 + " and " + x4 + ","+ y4
                             //        +" intersect would be at " + (int)intersectx + " " + (int)intersecty);
-                            if ((((int)intersectx >= x1 && (int)intersectx <= x2)
-                                    || ((int)intersectx <= x1 && (int)intersectx >= x2)) &&
-                                (((int)intersectx >= x3 && (int)intersectx <= x4)
-                                        || ((int)intersectx <= x3 && (int)intersectx >= x4))
-                                        && (!roadNetwork.get(i).contains(intersectx,intersecty) || !roadNetwork.get(j).contains(intersectx,intersecty)))
+                            if (((intersectx > x1 && intersectx < x2)
+                                    || (intersectx < x1 && intersectx > x2)) &&
+                                ((intersectx > x3 && intersectx < x4)
+                                        || (intersectx < x3 && intersectx > x4)) &&
+                                    ((intersecty > y1 && intersecty < y2)
+                                    || (intersecty < y1 && intersecty > y2)) &&
+                                    ((intersecty > y3 && intersecty < y4)
+                                            || (intersecty < y3 && intersecty > y4))
+                                    && (!roadNetwork.get(i).contains((int)intersectx,(int)intersecty)
+                                    || !roadNetwork.get(j).contains((int)intersectx,(int)intersecty)))
                             {
                                     //THERE IS INTERSECTION! SPLIT THE ROAD! (later)
-                                    interX = (int)intersectx;
-                                    interY = (int)intersecty;
+                                    interX = intersectx;
+                                    interY = intersecty;
                                     r1 = roadNetwork.get(i);
                                     r2 = roadNetwork.get(j);
-                                    System.out.println("intersect at " + interX + " " + interY);
+                                    //System.out.println("intersect at " + interX + " " + interY);
                                     break;
-
+                                    //totalInt++;
+                                    //myIntersections.add(new Pair(interX,interY));
                             }
                         }
                     }
@@ -254,19 +262,20 @@ public class Map {
                 if (r1 != null && r2 != null) {
                     roadNetwork.remove(r1);
                     roadNetwork.remove(r2);
-                    Road newRoad1 = new Road(r1.x1, r1.x2,interX,interY);
-                    Road newRoad2 = new Road(r1.x3, r1.x4, interX,interY);
-                    Road newRoad3 = new Road(r2.x1, r2.x2, interX, interY);
-                    Road newRoad4 = new Road(r2.x3, r2.x4, interX, interY);
+                    Road newRoad1 = new Road(r1.x1, r1.x2, (int)interX, (int)interY);
+                    Road newRoad2 = new Road(r1.x3, r1.x4, (int)interX, (int)interY);
+                    Road newRoad3 = new Road(r2.x1, r2.x2, (int)interX, (int)interY);
+                    Road newRoad4 = new Road(r2.x3, r2.x4, (int)interX, (int)interY);
                     roadNetwork.add(newRoad1);
                     roadNetwork.add(newRoad2);
                     roadNetwork.add(newRoad3);
                     roadNetwork.add(newRoad4);
-                    totalInt++;
+                   //totalInt++;
+                    totalInt = 0;
                 }
-            //}while(interX != -1);
-            System.out.println("I found " + totalInt + " intersections.");
-
+            }while(interX != -1);
+            //System.out.println("I found " + myIntersections.size() + " intersections.");
+            //System.out.println("it is " + myIntersections);
         }
 
 
@@ -278,6 +287,16 @@ public class Map {
                 return 1;
             else
                 return 0;
+        }
+
+        public void addMutation()
+        {
+            //random from 0 - 4,
+            //0 = don't mutate,
+            //1 = randomly choose a road's end point, find nearest end point elsewhere and make new road
+            //2 = randomly choose city, find nearest city elsewhere without a direct connection and make new road
+            //3 = find a road end point that is not a city, and shift one cell left/right/up or down (or don't mutate if no intersection exists)
+            //4 = randomly remove a road
         }
 
         public void calculateScore(List<Point> locations) {
@@ -428,6 +447,19 @@ public class Map {
 
     }
 
+    public Pair[] getIntersections()
+    {
+        if (roadNetworkPopulation.size() == 0) {
+            Pair[] p = new Pair[0];
+            return p;
+        }
+        Pair [] p = new Pair[roadNetworkPopulation.get(0).myIntersections.size()];
+        p = roadNetworkPopulation.get(0).myIntersections.toArray(p);
+
+        return p;
+    }
+
+
     //function getRoads: returns the best current road network (to display in ViewerController.java)
     public Road[] getRoads() {
         if (roadNetworkPopulation.size() == 0) {
@@ -460,17 +492,21 @@ public class Map {
     {
 
         Collections.sort(roadNetworkPopulation);
+        //roadNetworkPopulation.get(0).updateIntersections();
 
         ArrayList<RoadNetworkSolution> newGeneration
                 = new ArrayList<RoadNetworkSolution>();
 
-        for (int j = 0; j < 5; j++)
+        for (int j = 0; j < 3; j++)
         {
+            roadNetworkPopulation.get(j).updateIntersections();
+            roadNetworkPopulation.get(j).removeDeadEnds();
             roadNetworkPopulation.get(j).calculateScore(cities);
+
             newGeneration.add(roadNetworkPopulation.get(j));
         }
         Random rand = new Random();
-        for (int j = 5; j < roadNetworkPopulation.size(); j++) {
+        for (int j = 3; j < roadNetworkPopulation.size(); j++) {
             ArrayList<RoadNetworkSolution> parents
                     = new ArrayList<RoadNetworkSolution>();
             int r1, r2, r3;
@@ -545,6 +581,12 @@ public class Map {
 
         Collections.sort(roadNetworkPopulation);
 
+        //before printing out again, add mutation
+        for (int j = 3; j < roadNetworkPopulation.size(); j++)
+        {
+            roadNetworkPopulation.get(j).addMutation();
+        }
+
         for (int j = 0; j < roadNetworkPopulation.size(); j++) {
 
             System.out.println("Road Network " + j + ": "
@@ -552,6 +594,7 @@ public class Map {
                     + roadNetworkPopulation.get(j).score02 + " = "
                     + roadNetworkPopulation.get(j).score);
         }
+
     }
 
 }
