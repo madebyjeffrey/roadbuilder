@@ -291,12 +291,150 @@ public class Map {
 
         public void addMutation()
         {
+            RoadNetworkSolution newSolution = new RoadNetworkSolution();
+            for (int i = 0; i < roadNetwork.size(); i++)
+            {
+                newSolution.roadNetwork.add(new Road(roadNetwork.get(i).x1, roadNetwork.get(i).x2,
+                        roadNetwork.get(i).x3, roadNetwork.get(i).x4));
+            }
+            Random rand = new Random();
+            int whatToDo = rand.nextInt(5);
+
             //random from 0 - 4,
             //0 = don't mutate,
             //1 = randomly choose a road's end point, find nearest end point elsewhere and make new road
             //2 = randomly choose city, find nearest city elsewhere without a direct connection and make new road
             //3 = find a road end point that is not a city, and shift one cell left/right/up or down (or don't mutate if no intersection exists)
             //4 = randomly remove a road
+            if (whatToDo == 0)
+            {
+
+            }
+            else if (whatToDo == 1)
+            {
+                int getEndPoint = rand.nextInt(roadNetwork.size());
+                Point endPoint1 = new Point (roadNetwork.get(getEndPoint).x1,
+                        roadNetwork.get(getEndPoint).x2);
+                Point endPoint2 = null;
+                for (int i = 0; i < roadNetwork.size(); i++)
+                {
+                    if (endPoint2 == null)
+                    {
+                        if (endPoint1.distance(roadNetwork.get(i).x1, roadNetwork.get(i).x2) <=
+                                endPoint1.distance(roadNetwork.get(i).x3, roadNetwork.get(i).x4)
+                                && !roadNetwork.contains(new Road(endPoint1.x, endPoint1.y, roadNetwork.get(i).x1, roadNetwork.get(i).x2)))
+                        {
+                            endPoint2 = new Point(roadNetwork.get(i).x1, roadNetwork.get(i).x2);
+                        }
+                        else if (endPoint1.distance(roadNetwork.get(i).x3, roadNetwork.get(i).x4) <=
+                                endPoint1.distance(roadNetwork.get(i).x1, roadNetwork.get(i).x2)
+                                && !roadNetwork.contains(new Road(endPoint1.x, endPoint1.y, roadNetwork.get(i).x3, roadNetwork.get(i).x4)))
+                        {
+                            endPoint2 = new Point(roadNetwork.get(i).x3, roadNetwork.get(i).x4);
+                        }
+                    }
+                    else
+                    {
+                        if (endPoint1.distance(roadNetwork.get(i).x1, roadNetwork.get(i).x2) <=
+                                endPoint1.distance(endPoint2)
+                                && !roadNetwork.contains(new Road(endPoint1.x, endPoint1.y, roadNetwork.get(i).x1, roadNetwork.get(i).x2)))
+                        {
+                            endPoint2 = new Point(roadNetwork.get(i).x1, roadNetwork.get(i).x2);
+                        }
+                        else if (endPoint1.distance(roadNetwork.get(i).x3, roadNetwork.get(i).x4) <=
+                                endPoint1.distance(endPoint2)
+                                && !roadNetwork.contains(new Road(endPoint1.x, endPoint1.y, roadNetwork.get(i).x3, roadNetwork.get(i).x4)))
+                        {
+                            endPoint2 = new Point(roadNetwork.get(i).x3, roadNetwork.get(i).x4);
+                        }
+                    }
+                }
+                Road addRoad = new Road(endPoint1.x, endPoint1.y, endPoint2.x, endPoint2.y);
+                newSolution.roadNetwork.add(addRoad);
+            }
+            else if (whatToDo == 2)
+            {
+                Point getCity1 = cities.get(rand.nextInt(cities.size()));
+                Point getCity2 = null;
+                for (int i = 0; i < cities.size(); i++)
+                {
+                    if (getCity2 == null)
+                    {
+                        if (!roadNetwork.contains(new Road(getCity1.x, getCity1.y,
+                                cities.get(i).x, cities.get(i).y)))
+                        {
+                            getCity2 = cities.get(i);
+                        }
+                    }
+                    else
+                    {
+                        if (getCity1.distance(cities.get(i).x, cities.get(i).y) <=
+                                getCity1.distance(getCity2)
+                                && !roadNetwork.contains(new Road(getCity1.x, getCity1.y, cities.get(i).x, cities.get(i).y)))
+                        {
+                            getCity2 = new Point(cities.get(i).x, cities.get(i).y);
+                        }
+                    }
+                }
+                Road addRoad = new Road(getCity1.x, getCity1.y, getCity2.x, getCity2.y);
+                newSolution.roadNetwork.add(addRoad);
+            }
+            else if (whatToDo == 3)
+            {
+                //roadNetwork.
+                //newSolution.roadNetwork.remove(rand.nextInt(roadNetwork.size()));
+                ArrayList<Point> listOfIntersections = new ArrayList<Point>();
+                for (int i = 0; i < roadNetwork.size(); i++)
+                {
+                    if (!cities.contains(new Point(roadNetwork.get(i).x1, roadNetwork.get(i).x2)))
+                    {
+                        if (!listOfIntersections.contains(new Point(roadNetwork.get(i).x1, roadNetwork.get(i).x2)))
+                        {
+                            listOfIntersections.add(new Point(roadNetwork.get(i).x1, roadNetwork.get(i).x2));
+                        }
+                    }
+                    if (!cities.contains(new Point(roadNetwork.get(i).x3, roadNetwork.get(i).x4))) {
+                        if (!listOfIntersections.contains(new Point(roadNetwork.get(i).x3, roadNetwork.get(i).x4))) {
+                            listOfIntersections.add(new Point(roadNetwork.get(i).x3, roadNetwork.get(i).x4));
+                        }
+                    }
+                }
+                if (listOfIntersections.size() > 0) {
+                    Point originalPoint = listOfIntersections.get(rand.nextInt(listOfIntersections.size()));
+                    Point newPoint = null;
+                    int changeTo = rand.nextInt(4);
+                    if (changeTo == 0 && originalPoint.x + 1 < width)
+                        newPoint = new Point(originalPoint.x + 1, originalPoint.y);
+                    else if (changeTo == 1 && originalPoint.x - 1 >= 0)
+                        newPoint = new Point(originalPoint.x - 1, originalPoint.y);
+                    else if (changeTo == 2 && originalPoint.y + 1 < height)
+                        newPoint = new Point(originalPoint.x, originalPoint.y + 1);
+                    else if (changeTo == 2 && originalPoint.y - 1 >= 0)
+                        newPoint = new Point(originalPoint.x, originalPoint.y - 1);
+                    if (newPoint != null) {
+                        for (int i = 0; i < newSolution.roadNetwork.size(); i++) {
+                            if (newSolution.roadNetwork.get(i).x1 == originalPoint.x
+                                    && newSolution.roadNetwork.get(i).x2 == originalPoint.y) {
+                                newSolution.roadNetwork.get(i).x1 = newPoint.x;
+                                newSolution.roadNetwork.get(i).x2 = newPoint.y;
+                            }
+                            if (newSolution.roadNetwork.get(i).x3 == originalPoint.x
+                                    && newSolution.roadNetwork.get(i).x4 == originalPoint.y) {
+                                newSolution.roadNetwork.get(i).x3 = newPoint.x;
+                                newSolution.roadNetwork.get(i).x4 = newPoint.y;
+                            }
+                        }
+                    }
+                }
+
+            }
+            else if (whatToDo == 4) {
+                newSolution.roadNetwork.remove(rand.nextInt(roadNetwork.size()));
+            }
+            newSolution.calculateScore(cities);
+            if (newSolution.score < score){
+                roadNetwork = newSolution.roadNetwork;
+            }
         }
 
         public void calculateScore(List<Point> locations) {
@@ -497,7 +635,7 @@ public class Map {
         ArrayList<RoadNetworkSolution> newGeneration
                 = new ArrayList<RoadNetworkSolution>();
 
-        for (int j = 0; j < 3; j++)
+        for (int j = 0; j < 5; j++)
         {
             roadNetworkPopulation.get(j).updateIntersections();
             roadNetworkPopulation.get(j).removeDeadEnds();
@@ -506,7 +644,7 @@ public class Map {
             newGeneration.add(roadNetworkPopulation.get(j));
         }
         Random rand = new Random();
-        for (int j = 3; j < roadNetworkPopulation.size(); j++) {
+        for (int j = 5; j < roadNetworkPopulation.size(); j++) {
             ArrayList<RoadNetworkSolution> parents
                     = new ArrayList<RoadNetworkSolution>();
             int r1, r2, r3;
@@ -582,10 +720,13 @@ public class Map {
         Collections.sort(roadNetworkPopulation);
 
         //before printing out again, add mutation
-        for (int j = 3; j < roadNetworkPopulation.size(); j++)
+        for (int j = 0; j < roadNetworkPopulation.size(); j++)
         {
             roadNetworkPopulation.get(j).addMutation();
+            roadNetworkPopulation.get(j).calculateScore(cities);
         }
+
+        Collections.sort(roadNetworkPopulation);
 
         for (int j = 0; j < roadNetworkPopulation.size(); j++) {
 
