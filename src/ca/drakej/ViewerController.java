@@ -24,6 +24,7 @@ import javafx.scene.shape.Line;
 import javafx.stage.Stage;
 
 
+import java.awt.*;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.ResourceBundle;
@@ -85,7 +86,7 @@ public class ViewerController implements Initializable {
 
             Arrays.stream(getMap().getRoads()).forEach(road -> {
                 //System.out.println(" updating roads");
-                Line line = new Line(road.x1 * scale, road.x2 * scale, road.x3 * scale, road.x4 * scale);
+                Line line = new Line(road.p1.x * scale, road.p1.y * scale, road.p2.x * scale, road.p2.y * scale);
                 line.setStroke(Color.BLACK);
                 group.getChildren().addAll(line);
             });
@@ -96,9 +97,9 @@ public class ViewerController implements Initializable {
                 group.getChildren().addAll(circle);
             });*/
 
-            Arrays.stream(getMap().getCities()).forEach(city -> {
+            Arrays.stream(getMap().getCities().toArray()).forEach(city -> {
                 //System.out.println(" " + city.getX() + " " + city.getY());
-                Circle circle = new Circle(city.getX() * scale, city.getY() * scale, 4, Color.RED);
+                Circle circle = new Circle(((Point) city).getX() * scale, ((Point)city).getY() * scale, 4, Color.RED);
                 group.getChildren().addAll(circle);
             });
 
@@ -151,7 +152,9 @@ public class ViewerController implements Initializable {
 
         Map map = new Map(getMap().getWidth(),getMap().getHeight());
 
-        map.setCities(getMap().getCities());
+        Point[] cities = new Point[getMap().getCities().size()];
+        cities = getMap().getCities().toArray(cities);
+        map.setCities(cities);
 
         map.initializeGA(numberOfGAPopulation);
 
@@ -168,7 +171,9 @@ public class ViewerController implements Initializable {
 
         Map map = new Map(getMap().getWidth(),getMap().getHeight());
 
-        map.setCities(getMap().getCities());
+        Point[] cities = new Point[getMap().getCities().size()];
+        cities = getMap().getCities().toArray(cities);
+        map.setCities(cities);
 
         map.setRoadNetworkPopulation(getMap().getRoadNetworkPopulation());
 
