@@ -71,13 +71,13 @@ public class ViewerController implements Initializable {
 
             final double paneMin = Math.min(pane.getWidth(), pane.getHeight());
             final double ourMin = Math.min(newValue.getWidth(), newValue.getHeight());
-            final double scale = paneMin / ourMin;
+            final double scale = (paneMin-10) / ourMin;
 
-            for (int i = 1; i < getMap().getWidth(); i++)
+            for (int i = 0; i < getMap().getWidth(); i++)
             {
-                for (int j = 1; j < getMap().getHeight(); j++)
+                for (int j = 0; j < getMap().getHeight(); j++)
                 {
-                    Circle circle = new Circle(i * scale, j * scale, 1, Color.BLACK);
+                    Circle circle = new Circle(i * scale + 10, j * scale + 10, 1, Color.BLACK);
                     group.getChildren().addAll(circle);
                 }
             }
@@ -86,7 +86,7 @@ public class ViewerController implements Initializable {
 
             Arrays.stream(getMap().getRoads()).forEach(road -> {
                 //System.out.println(" updating roads");
-                Line line = new Line(road.p1.x * scale, road.p1.y * scale, road.p2.x * scale, road.p2.y * scale);
+                Line line = new Line(road.p1.x * scale + 10, road.p1.y * scale + 10, road.p2.x * scale + 10, road.p2.y * scale + 10);
                 line.setStroke(Color.BLACK);
                 group.getChildren().addAll(line);
             });
@@ -99,7 +99,7 @@ public class ViewerController implements Initializable {
 
             Arrays.stream(getMap().getCities().toArray()).forEach(city -> {
                 //System.out.println(" " + city.getX() + " " + city.getY());
-                Circle circle = new Circle(((Point) city).getX() * scale, ((Point)city).getY() * scale, 4, Color.RED);
+                Circle circle = new Circle(((Point) city).getX() * scale + 10, ((Point)city).getY() * scale + 10, 4, Color.RED);
                 group.getChildren().addAll(circle);
             });
 
@@ -185,4 +185,29 @@ public class ViewerController implements Initializable {
         System.out.println("now at generation: " + generationNumber);
     }
 
+    public void clustering(ActionEvent e) throws Exception {
+        Map map = new Map(getMap().getWidth(),getMap().getHeight());
+
+        Point[] cities = new Point[getMap().getCities().size()];
+        cities = getMap().getCities().toArray(cities);
+        map.setCities(cities);
+
+        map.clusterizeRoadNetwork();
+
+        setMap(map);
+
+        //generationNumber = 0;
+    }
+
+    public void clear(ActionEvent e) throws Exception {
+        Map map = new Map(getMap().getWidth(),getMap().getHeight());
+
+        Point[] cities = new Point[getMap().getCities().size()];
+        cities = getMap().getCities().toArray(cities);
+        map.setCities(cities);
+
+        map.clearMap();
+
+        setMap(map);
+    }
 }

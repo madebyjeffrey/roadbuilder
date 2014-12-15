@@ -25,11 +25,121 @@ public class Map {
         this.height = height;
     }
 
+    public void clearMap()
+    {
+        roadNetworkPopulation.clear();
+    }
+
     public void generateCities(int count) {
         for (int i = 0; i < count; ++i) {
             cities.add(generateCity());
         }
+
+        //NEW: add clustering algorithm before GA is applied
+        //clusterizeRoadNetwork();
     }
+
+    public class PointGroup{
+        public List<Point> cities = new ArrayList<Point>();
+        public Point center = null;
+
+        public PointGroup()
+        {
+        }
+
+        public void add(Point c)
+        {
+            cities.add(c);
+
+            float cx = 0, cy = 0;
+            for (int i = 0; i < cities.size(); i++)
+            {
+                //find center of all cities
+                cx += cities.get(i).x;
+                cy += cities.get(i).y;
+            }
+            center = new Point ((int)(cx/cities.size()),(int)(cy/(float)cities.size()));
+        }
+
+        public Point returnNearestPoint(Point c)
+        {
+            Point c2 = null;
+            for (int i = 0; i < cities.size(); i++)
+            {
+                if (c2 == null)
+                    c2 = cities.get(i);
+                else
+                {
+                    if (cities.get(i).distance(c) < c2.distance(c))
+                        c2 = cities.get(i);
+                }
+            }
+            return c2;
+        }
+
+    }
+
+    public void clusterizeRoadNetwork()
+    {
+        //for all individual cities in a set,
+        //group two nearest with road, combine as group, add group back to set
+        //repeat until set.size == 1
+        RoadNetworkSolution newRoadNetwork = new RoadNetworkSolution(this);
+
+        List<PointGroup> tempCities = new ArrayList<PointGroup>();
+        for (int i = 0; i < cities.size(); i++) {
+            PointGroup p = new PointGroup();
+            p.add(cities.get(i));
+            tempCities.add(p);
+        }
+
+        while(tempCities.size() > 1)
+        {
+            //find two nearest groups
+            float distance = Math.max(height,width);
+            PointGroup group01 = null;
+            PointGroup group02 = null;
+            for (int i = 0; i < tempCities.size(); i++) {
+                if (group01 == null)
+                    group01 = tempCities.get(i);
+                for (int j = i; j < tempCities.size(); j++)
+                {
+                    if (i != j) {
+                        if (group02 == null) {
+                            group02 = tempCities.get(j);
+                            distance = (float) group01.center.distance(group02.center);
+                        }
+                        else {
+                            if (distance > tempCities.get(i).center.distance(tempCities.get(j).center))
+                            {
+                                group01 = tempCities.get(i);
+                                group02 = tempCities.get(j);
+                                distance = (float) group01.center.distance(group02.center);
+                            }
+                        }
+                    }
+                }
+            }
+
+            Road newRoad = new Road(group01.returnNearestPoint(group02.center),
+                    group02.returnNearestPoint(group01.center));
+            tempCities.remove(group01);
+            tempCities.remove(group02);
+            for (int i = 0; i < group02.cities.size(); i++)
+            {
+                group01.add(group02.cities.get(i));
+            }
+            tempCities.add(group01);
+            newRoadNetwork.roadNetwork.add(newRoad);
+        }
+
+        roadNetworkPopulation.add(0, newRoadNetwork);
+        roadNetworkPopulation.get(0).calculateScore(cities);
+        System.out.println("The following is the score from the 'clustering' algorithm:");
+        printRoadNetworkPopulation();
+        System.out.println("next will be the GA");
+    }
+
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -112,6 +222,7 @@ public class Map {
 
     //initializeGA: function that initializes population (random "complete" road networks) based on given size)
     public void initializeGA(int sizeOfPopulation) {
+        roadNetworkPopulation.clear();
         for (int j = 0; j < sizeOfPopulation; j++) {
             //within loop, generate one complete individual road network and add to population
             RoadNetworkSolution newNetwork = new RoadNetworkSolution(this);
